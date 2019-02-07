@@ -1,0 +1,621 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		B4D81076220C699D002DBE34 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4D81075220C699D002DBE34 /* AppDelegate.swift */; };
+		B4D81078220C699D002DBE34 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4D81077220C699D002DBE34 /* ViewController.swift */; };
+		B4D8107A220C69A0002DBE34 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B4D81079220C69A0002DBE34 /* Assets.xcassets */; };
+		B4D8107D220C69A0002DBE34 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B4D8107B220C69A0002DBE34 /* Main.storyboard */; };
+		B4D81089220C69A0002DBE34 /* RouletteDemoTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4D81088220C69A0002DBE34 /* RouletteDemoTests.swift */; };
+		B4D81094220C69A0002DBE34 /* RouletteDemoUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4D81093220C69A0002DBE34 /* RouletteDemoUITests.swift */; };
+		B4D810A2220C6A08002DBE34 /* RouletteView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4D810A1220C6A08002DBE34 /* RouletteView.swift */; };
+		B4D810AC220C92A4002DBE34 /* PocketGraphic.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4D810A5220C92A4002DBE34 /* PocketGraphic.swift */; };
+		B4D810AE220C92A4002DBE34 /* RouletteWheel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4D810A7220C92A4002DBE34 /* RouletteWheel.swift */; };
+		B4D810AF220C92A4002DBE34 /* EntityId.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4D810A8220C92A4002DBE34 /* EntityId.swift */; };
+		B4D810B0220C92A4002DBE34 /* Drawable.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4D810A9220C92A4002DBE34 /* Drawable.swift */; };
+		B4D810B1220C92A4002DBE34 /* SelectionRegion.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4D810AA220C92A4002DBE34 /* SelectionRegion.swift */; };
+		B4D810B2220C92A4002DBE34 /* Selectable.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4D810AB220C92A4002DBE34 /* Selectable.swift */; };
+		B4D810B5220C92C7002DBE34 /* CGRect.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4D810B3220C92C7002DBE34 /* CGRect.swift */; };
+		B4D810B6220C92C7002DBE34 /* NumberFormatter.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4D810B4220C92C7002DBE34 /* NumberFormatter.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		B4D81085220C69A0002DBE34 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = B4D8106A220C699D002DBE34 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = B4D81071220C699D002DBE34;
+			remoteInfo = RouletteDemo;
+		};
+		B4D81090220C69A0002DBE34 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = B4D8106A220C699D002DBE34 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = B4D81071220C699D002DBE34;
+			remoteInfo = RouletteDemo;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		B4D81072220C699D002DBE34 /* RouletteDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RouletteDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		B4D81075220C699D002DBE34 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		B4D81077220C699D002DBE34 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		B4D81079220C69A0002DBE34 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		B4D8107C220C69A0002DBE34 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		B4D8107E220C69A0002DBE34 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B4D8107F220C69A0002DBE34 /* RouletteDemo.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = RouletteDemo.entitlements; sourceTree = "<group>"; };
+		B4D81084220C69A0002DBE34 /* RouletteDemoTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = RouletteDemoTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		B4D81088220C69A0002DBE34 /* RouletteDemoTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RouletteDemoTests.swift; sourceTree = "<group>"; };
+		B4D8108A220C69A0002DBE34 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B4D8108F220C69A0002DBE34 /* RouletteDemoUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = RouletteDemoUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		B4D81093220C69A0002DBE34 /* RouletteDemoUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RouletteDemoUITests.swift; sourceTree = "<group>"; };
+		B4D81095220C69A0002DBE34 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B4D810A1220C6A08002DBE34 /* RouletteView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RouletteView.swift; sourceTree = "<group>"; };
+		B4D810A5220C92A4002DBE34 /* PocketGraphic.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PocketGraphic.swift; sourceTree = "<group>"; };
+		B4D810A7220C92A4002DBE34 /* RouletteWheel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RouletteWheel.swift; sourceTree = "<group>"; };
+		B4D810A8220C92A4002DBE34 /* EntityId.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EntityId.swift; sourceTree = "<group>"; };
+		B4D810A9220C92A4002DBE34 /* Drawable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Drawable.swift; sourceTree = "<group>"; };
+		B4D810AA220C92A4002DBE34 /* SelectionRegion.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SelectionRegion.swift; sourceTree = "<group>"; };
+		B4D810AB220C92A4002DBE34 /* Selectable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Selectable.swift; sourceTree = "<group>"; };
+		B4D810B3220C92C7002DBE34 /* CGRect.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CGRect.swift; sourceTree = "<group>"; };
+		B4D810B4220C92C7002DBE34 /* NumberFormatter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NumberFormatter.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		B4D8106F220C699D002DBE34 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B4D81081220C69A0002DBE34 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B4D8108C220C69A0002DBE34 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		B4D81069220C699D002DBE34 = {
+			isa = PBXGroup;
+			children = (
+				B4D81074220C699D002DBE34 /* RouletteDemo */,
+				B4D81087220C69A0002DBE34 /* RouletteDemoTests */,
+				B4D81092220C69A0002DBE34 /* RouletteDemoUITests */,
+				B4D81073220C699D002DBE34 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		B4D81073220C699D002DBE34 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				B4D81072220C699D002DBE34 /* RouletteDemo.app */,
+				B4D81084220C69A0002DBE34 /* RouletteDemoTests.xctest */,
+				B4D8108F220C69A0002DBE34 /* RouletteDemoUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		B4D81074220C699D002DBE34 /* RouletteDemo */ = {
+			isa = PBXGroup;
+			children = (
+				B4D81075220C699D002DBE34 /* AppDelegate.swift */,
+				B4D81077220C699D002DBE34 /* ViewController.swift */,
+				B4D810A1220C6A08002DBE34 /* RouletteView.swift */,
+				B4D810A9220C92A4002DBE34 /* Drawable.swift */,
+				B4D810A8220C92A4002DBE34 /* EntityId.swift */,
+				B4D810A5220C92A4002DBE34 /* PocketGraphic.swift */,
+				B4D810A7220C92A4002DBE34 /* RouletteWheel.swift */,
+				B4D810AB220C92A4002DBE34 /* Selectable.swift */,
+				B4D810AA220C92A4002DBE34 /* SelectionRegion.swift */,
+				B4D810B7220C92D5002DBE34 /* Extensions */,
+				B4D81079220C69A0002DBE34 /* Assets.xcassets */,
+				B4D8107B220C69A0002DBE34 /* Main.storyboard */,
+				B4D8107E220C69A0002DBE34 /* Info.plist */,
+				B4D8107F220C69A0002DBE34 /* RouletteDemo.entitlements */,
+			);
+			path = RouletteDemo;
+			sourceTree = "<group>";
+		};
+		B4D81087220C69A0002DBE34 /* RouletteDemoTests */ = {
+			isa = PBXGroup;
+			children = (
+				B4D81088220C69A0002DBE34 /* RouletteDemoTests.swift */,
+				B4D8108A220C69A0002DBE34 /* Info.plist */,
+			);
+			path = RouletteDemoTests;
+			sourceTree = "<group>";
+		};
+		B4D81092220C69A0002DBE34 /* RouletteDemoUITests */ = {
+			isa = PBXGroup;
+			children = (
+				B4D81093220C69A0002DBE34 /* RouletteDemoUITests.swift */,
+				B4D81095220C69A0002DBE34 /* Info.plist */,
+			);
+			path = RouletteDemoUITests;
+			sourceTree = "<group>";
+		};
+		B4D810B7220C92D5002DBE34 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				B4D810B3220C92C7002DBE34 /* CGRect.swift */,
+				B4D810B4220C92C7002DBE34 /* NumberFormatter.swift */,
+			);
+			name = Extensions;
+			path = "New Group";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		B4D81071220C699D002DBE34 /* RouletteDemo */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B4D81098220C69A0002DBE34 /* Build configuration list for PBXNativeTarget "RouletteDemo" */;
+			buildPhases = (
+				B4D8106E220C699D002DBE34 /* Sources */,
+				B4D8106F220C699D002DBE34 /* Frameworks */,
+				B4D81070220C699D002DBE34 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = RouletteDemo;
+			productName = RouletteDemo;
+			productReference = B4D81072220C699D002DBE34 /* RouletteDemo.app */;
+			productType = "com.apple.product-type.application";
+		};
+		B4D81083220C69A0002DBE34 /* RouletteDemoTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B4D8109B220C69A0002DBE34 /* Build configuration list for PBXNativeTarget "RouletteDemoTests" */;
+			buildPhases = (
+				B4D81080220C69A0002DBE34 /* Sources */,
+				B4D81081220C69A0002DBE34 /* Frameworks */,
+				B4D81082220C69A0002DBE34 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				B4D81086220C69A0002DBE34 /* PBXTargetDependency */,
+			);
+			name = RouletteDemoTests;
+			productName = RouletteDemoTests;
+			productReference = B4D81084220C69A0002DBE34 /* RouletteDemoTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		B4D8108E220C69A0002DBE34 /* RouletteDemoUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B4D8109E220C69A0002DBE34 /* Build configuration list for PBXNativeTarget "RouletteDemoUITests" */;
+			buildPhases = (
+				B4D8108B220C69A0002DBE34 /* Sources */,
+				B4D8108C220C69A0002DBE34 /* Frameworks */,
+				B4D8108D220C69A0002DBE34 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				B4D81091220C69A0002DBE34 /* PBXTargetDependency */,
+			);
+			name = RouletteDemoUITests;
+			productName = RouletteDemoUITests;
+			productReference = B4D8108F220C69A0002DBE34 /* RouletteDemoUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		B4D8106A220C699D002DBE34 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1010;
+				LastUpgradeCheck = 1010;
+				ORGANIZATIONNAME = "Robert Muckle-Jones";
+				TargetAttributes = {
+					B4D81071220C699D002DBE34 = {
+						CreatedOnToolsVersion = 10.1;
+					};
+					B4D81083220C69A0002DBE34 = {
+						CreatedOnToolsVersion = 10.1;
+						TestTargetID = B4D81071220C699D002DBE34;
+					};
+					B4D8108E220C69A0002DBE34 = {
+						CreatedOnToolsVersion = 10.1;
+						TestTargetID = B4D81071220C699D002DBE34;
+					};
+				};
+			};
+			buildConfigurationList = B4D8106D220C699D002DBE34 /* Build configuration list for PBXProject "RouletteDemo" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = B4D81069220C699D002DBE34;
+			productRefGroup = B4D81073220C699D002DBE34 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				B4D81071220C699D002DBE34 /* RouletteDemo */,
+				B4D81083220C69A0002DBE34 /* RouletteDemoTests */,
+				B4D8108E220C69A0002DBE34 /* RouletteDemoUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		B4D81070220C699D002DBE34 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B4D8107A220C69A0002DBE34 /* Assets.xcassets in Resources */,
+				B4D8107D220C69A0002DBE34 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B4D81082220C69A0002DBE34 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B4D8108D220C69A0002DBE34 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		B4D8106E220C699D002DBE34 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B4D810B2220C92A4002DBE34 /* Selectable.swift in Sources */,
+				B4D81078220C699D002DBE34 /* ViewController.swift in Sources */,
+				B4D810A2220C6A08002DBE34 /* RouletteView.swift in Sources */,
+				B4D810B1220C92A4002DBE34 /* SelectionRegion.swift in Sources */,
+				B4D810AC220C92A4002DBE34 /* PocketGraphic.swift in Sources */,
+				B4D810B0220C92A4002DBE34 /* Drawable.swift in Sources */,
+				B4D810B6220C92C7002DBE34 /* NumberFormatter.swift in Sources */,
+				B4D81076220C699D002DBE34 /* AppDelegate.swift in Sources */,
+				B4D810B5220C92C7002DBE34 /* CGRect.swift in Sources */,
+				B4D810AE220C92A4002DBE34 /* RouletteWheel.swift in Sources */,
+				B4D810AF220C92A4002DBE34 /* EntityId.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B4D81080220C69A0002DBE34 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B4D81089220C69A0002DBE34 /* RouletteDemoTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B4D8108B220C69A0002DBE34 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B4D81094220C69A0002DBE34 /* RouletteDemoUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		B4D81086220C69A0002DBE34 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = B4D81071220C699D002DBE34 /* RouletteDemo */;
+			targetProxy = B4D81085220C69A0002DBE34 /* PBXContainerItemProxy */;
+		};
+		B4D81091220C69A0002DBE34 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = B4D81071220C699D002DBE34 /* RouletteDemo */;
+			targetProxy = B4D81090220C69A0002DBE34 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		B4D8107B220C69A0002DBE34 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				B4D8107C220C69A0002DBE34 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		B4D81096220C69A0002DBE34 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "-";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.14;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		B4D81097220C69A0002DBE34 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "-";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.14;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = macosx;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+			};
+			name = Release;
+		};
+		B4D81099220C69A0002DBE34 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = RouletteDemo/RouletteDemo.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				INFOPLIST_FILE = RouletteDemo/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = RecordStreet.RouletteDemo;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+			};
+			name = Debug;
+		};
+		B4D8109A220C69A0002DBE34 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = RouletteDemo/RouletteDemo.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				INFOPLIST_FILE = RouletteDemo/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = RecordStreet.RouletteDemo;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+			};
+			name = Release;
+		};
+		B4D8109C220C69A0002DBE34 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				INFOPLIST_FILE = RouletteDemoTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@loader_path/../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = RecordStreet.RouletteDemoTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/RouletteDemo.app/Contents/MacOS/RouletteDemo";
+			};
+			name = Debug;
+		};
+		B4D8109D220C69A0002DBE34 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				INFOPLIST_FILE = RouletteDemoTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@loader_path/../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = RecordStreet.RouletteDemoTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/RouletteDemo.app/Contents/MacOS/RouletteDemo";
+			};
+			name = Release;
+		};
+		B4D8109F220C69A0002DBE34 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				INFOPLIST_FILE = RouletteDemoUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@loader_path/../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = RecordStreet.RouletteDemoUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TEST_TARGET_NAME = RouletteDemo;
+			};
+			name = Debug;
+		};
+		B4D810A0220C69A0002DBE34 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				INFOPLIST_FILE = RouletteDemoUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@loader_path/../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = RecordStreet.RouletteDemoUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TEST_TARGET_NAME = RouletteDemo;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		B4D8106D220C699D002DBE34 /* Build configuration list for PBXProject "RouletteDemo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B4D81096220C69A0002DBE34 /* Debug */,
+				B4D81097220C69A0002DBE34 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		B4D81098220C69A0002DBE34 /* Build configuration list for PBXNativeTarget "RouletteDemo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B4D81099220C69A0002DBE34 /* Debug */,
+				B4D8109A220C69A0002DBE34 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		B4D8109B220C69A0002DBE34 /* Build configuration list for PBXNativeTarget "RouletteDemoTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B4D8109C220C69A0002DBE34 /* Debug */,
+				B4D8109D220C69A0002DBE34 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		B4D8109E220C69A0002DBE34 /* Build configuration list for PBXNativeTarget "RouletteDemoUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B4D8109F220C69A0002DBE34 /* Debug */,
+				B4D810A0220C69A0002DBE34 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = B4D8106A220C699D002DBE34 /* Project object */;
+}
